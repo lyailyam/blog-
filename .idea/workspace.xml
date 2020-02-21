@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c77a9d02-aac6-4a0e-9f05-9b7ad14cda3b" name="Default Changelist" comment="" />
+    <list default="true" id="c77a9d02-aac6-4a0e-9f05-9b7ad14cda3b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogApp/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogApp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogApp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post_detail.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +38,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1XepsB9hzkmYjMmLYonHWl4X58K" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -53,6 +66,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="blog.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -85,7 +99,8 @@
       <workItem from="1581570701544" duration="4107000" />
       <workItem from="1581575797706" duration="3753000" />
       <workItem from="1581671573505" duration="1666000" />
-      <workItem from="1582192764820" duration="645000" />
+      <workItem from="1582192764820" duration="1391000" />
+      <workItem from="1582276054031" duration="2163000" />
     </task>
     <servers />
   </component>
@@ -93,13 +108,33 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="653" y="353" key="com.intellij.ide.util.TipDialog" timestamp="1582192765001">
+    <state x="729" y="297" width="524" height="510" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582276310257">
       <screen x="67" y="27" width="1853" height="1052" />
     </state>
-    <state x="653" y="353" key="com.intellij.ide.util.TipDialog/67.27.1853.1052@67.27.1853.1052" timestamp="1582192765001" />
-    <state x="641" y="114" width="704" height="867" key="find.popup" timestamp="1581583553449">
+    <state x="729" y="297" width="524" height="510" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1052@67.27.1853.1052" timestamp="1582276310257" />
+    <state width="1807" height="278" key="GridCell.Tab.0.bottom" timestamp="1582277139101">
       <screen x="67" y="27" width="1853" height="1052" />
     </state>
-    <state x="641" y="114" width="704" height="867" key="find.popup/67.27.1853.1052@67.27.1853.1052" timestamp="1581583553449" />
+    <state width="1807" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1052@67.27.1853.1052" timestamp="1582277139101" />
+    <state width="1807" height="278" key="GridCell.Tab.0.center" timestamp="1582277139100">
+      <screen x="67" y="27" width="1853" height="1052" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.0.center/67.27.1853.1052@67.27.1853.1052" timestamp="1582277139100" />
+    <state width="1807" height="278" key="GridCell.Tab.0.left" timestamp="1582277139100">
+      <screen x="67" y="27" width="1853" height="1052" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.0.left/67.27.1853.1052@67.27.1853.1052" timestamp="1582277139100" />
+    <state width="1807" height="278" key="GridCell.Tab.0.right" timestamp="1582277139101">
+      <screen x="67" y="27" width="1853" height="1052" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.0.right/67.27.1853.1052@67.27.1853.1052" timestamp="1582277139101" />
+    <state x="653" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1582276154362">
+      <screen x="67" y="27" width="1853" height="1052" />
+    </state>
+    <state x="653" y="345" key="com.intellij.ide.util.TipDialog/67.27.1853.1052@67.27.1853.1052" timestamp="1582276154362" />
+    <state x="641" y="114" width="704" height="867" key="find.popup" timestamp="1582277833792">
+      <screen x="67" y="27" width="1853" height="1052" />
+    </state>
+    <state x="641" y="114" width="704" height="867" key="find.popup/67.27.1853.1052@67.27.1853.1052" timestamp="1582277833792" />
   </component>
 </project>

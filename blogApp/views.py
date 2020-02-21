@@ -3,13 +3,7 @@ from django.shortcuts import render, get_object_or_404
 # Create your views here.
 from django.views import generic
 from .models import Post
-from .forms import PostForm
 from taggit.models import Tag
-
-
-class PostList(generic.ListView):
-    queryset = Post.objects.filter(status=1).order_by('-created_on')
-    template_name = 'index.html'
 
 
 class PostDetail(generic.DetailView):
@@ -17,12 +11,24 @@ class PostDetail(generic.DetailView):
     template_name = 'post_detail.html'
 
 
+def home_view(request):
+    posts = Post.objects.filter(status=1).order_by('-created_on')
+    # Show most common tags
+    common_tags = Post.tags.most_common()[:4]
+    context = {
+        'posts': posts,
+        'common_tags': common_tags
+    }
+    return render(request, 'index.html', context)
+
+
 def tagged(request, slug):
     tag = get_object_or_404(Tag, slug=slug)
-    # Filter posts by tag name
+    common_tags = Post.tags.most_common()[:4]
     posts = Post.objects.filter(tags=tag)
     context = {
-        'tag': tag,
-        'posts': posts,
+        'tag':tag,
+        'common_tags':common_tags,
+        'posts':posts,
     }
-    return render(request, 'home.html', context)
+    return render(request, 'index.html', context)

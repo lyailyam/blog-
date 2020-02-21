@@ -31,15 +31,26 @@
     </div>
 </header>
 <div class="container">
+    <p>Common Tags:
+        {% for tag in common_tags %}
+        <a href="{% url 'tagged' tag.slug %}" class="mr-1 badge badge-info">#{{ tag }}</a>
+        {% endfor %}
+    </p>
     <div class="row">
         <!-- Blog Entries Column -->
         <div class="col-md-8 mt-3 left">
-            {% for post in post_list %}
+            {% for post in posts %}
             <div class="card mb-4">
                 <div class="card-body">
                     <h2 class="card-title">{{ post.title }}</h2>
                     <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
                     <p class="card-text">{{post.content|slice:":200" }}</p>
+                    <div style="display:flex">
+                        {% for tag in post.tags.all %}
+                        <a href="{% url 'tagged' tag.slug %}" class="mr-1 badge badge-info">#{{ tag }}</a>
+                        {% endfor %}
+                    </div>
+                    <br/>
                     <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
                 </div>
             </div>

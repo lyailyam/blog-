@@ -7,6 +7,12 @@
         <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
         <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
         <p class="card-text ">{{ object.content | safe }}</p>
+        <div style="display:flex">
+            {% for tag in post.tags.all %}
+            <a href="{% url 'tagged' tag.slug %}" class="mr-1 badge badge-info">#{{ tag }}</a>
+            {% endfor %}
+        </div>
+        <br/>
       </div>
     </div>
     {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
